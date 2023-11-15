@@ -17,6 +17,8 @@ $record = "AzureActiveDirectory"
 $resultSize = 5000
 $intervalMinutes = 60
 
+# from a second shell you can monitor this: Get-Content .\AuditLogRecords.csv -Tail 1 -Wait
+
 #Start script
 [DateTime]$currentStart = $start
 [DateTime]$currentEnd = $end
